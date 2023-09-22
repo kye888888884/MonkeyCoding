@@ -57,8 +57,12 @@ def GameMain():
     x=0
     y=imgw
 
-
+    t = 0
     while True:
+        t += 1
+        if t % 100 == 0:
+            print('time: ', t)
+            t = 0
         screen.fill((255,255,255))
 
         for event in pygame.event.get():
